@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/quantum_black_100"
+    tools:context=".ui.activity.splash.SplashActivity">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:scaleType="center"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:background="@mipmap/ic_launcher"/>
+
+</RelativeLayout>

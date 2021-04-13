@@ -1,0 +1,111 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+.tables-card {
+	.card-table {
+		max-height: 250px;
+		overflow-y: scroll;
+	}
+}
+
+html {
+	height: 100%;
+	background-color: hsl(0, 0%, 96%);
+}
+body {
+	height: 100%;
+	background-color: hsl(0, 0%, 96%);
+}
+.px-1 {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+.p-1 {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+.py-1 {
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+.box-shadow-y {
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+}
+.menu-container {
+	padding-top: 3rem;
+	height: 100vh;
+	overflow: scroll;
+	position: fixed;
+	bottom: 0;
+	margin: auto;
+	min-width: 300px;
+	z-index: 10;
+	background-color: transparent;
+	transform: translateX(-100%);
+	transition: all ease 0.5s;
+}
+.menu-container.active {
+	transform: translateX(0%);
+}
+.icon {
+	height: 30px;
+	width: 30px;
+	vertical-align: baseline;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.toggler {
+	margin-left: 0;
+	cursor: pointer;
+}
+@media (min-width: 769px) {
+	.menu-container {
+		width: 25%;
+		min-width: auto;
+		transform: translateX(0%);
+	}
+}
+@media (min-width: 1024px) {
+	.menu-container {
+		width: 16.6667%;
+		min-width: auto;
+		transform: translateX(0%);
+	}
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name = "app_name"> StripePayment </string>
+    <string name = "please_enter_card_number"> Please enter card number </string>
+    <string name = "please_enter_card_expiration_details"> Please enter card expiration details </string>
+    <string name = "please_enter_card_cvv"> Please enter CVV </string>
+    <string name = "stripe_payment"> Add Card </string>
+    <string name = "add_card_details"> Add Card Details </string>
+</resources>

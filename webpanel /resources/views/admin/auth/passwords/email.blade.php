@@ -1,0 +1,34 @@
+@extends('admin.layout.auth')
+
+<!-- Main Content -->
+@section('content')
+<div class="sign-form">
+    <div class="columns">
+        <div class="column">
+            <div class="box b-a-0">
+                <div class="p-2 text-xs-center">
+                    <h5>@lang('admin.auth.reset_password')</h5>
+                </div>
+                <form class="form-material mb-1" role="form" method="POST" action="{{ url('/admin/password/email') }}" >
+                {{ csrf_field() }}
+                    <div class="field {{ $errors->has('email') ? ' has-error' : '' }}">
+                        <input type="email" name="email" value="{{ old('email') }}" required="true" id="email" placeholder="Email">
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+
+                    <div class="px-2 form-group mb-0">
+                        <button type="submit" class="button is-primary is-uppercase">@lang('admin.auth.send_password_reset_link')</button>
+                    </div>
+                </form>
+                <div class="p-2 text-xs-center text-muted">
+                    <a class="text-black" href="{{ url('/admin/login') }}"><span class="underline">@lang('admin.auth.login_here')!</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

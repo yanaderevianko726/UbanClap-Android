@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llEstimatedFareContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEE"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EEE"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="start"
+            android:text="@string/estimated_fare"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_14" />
+
+        <FrameLayout
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_transparent">
+
+            <ImageView
+                android:id="@+id/estimated_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_5sdp"
+                app:srcCompat="@drawable/ic_car" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvEstimatedFare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EEE"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="end"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:background="@color/window_background"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:id="@+id/view_title"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:gravity="start"
+                android:text="@string/coupon"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/view_coupons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                 android:fontFamily="@font/clanpro_medium"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:background="@color/colorAccent"
+                android:text="@string/view_coupon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/baserate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:text="Base Rates"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:maxLines="1"
+                android:text="@string/cash"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_amount_charge2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/clanpro_medium"
+                android:gravity="end"
+                android:text="30$"
+
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calculations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/calculation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:text="@string/rate"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                 android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:maxLines="1"
+                android:text="@string/cash"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_amount_charge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/clanpro_medium"
+                android:gravity="end"
+                android:text="30$"
+
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+            <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:text="@string/estimated_payment"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/estimated_payment_mode"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:maxLines="1"
+                android:text="@string/cash"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/clanpro_medium"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/change"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:id="@+id/description"
+                android:lines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:text="Description"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:paddingStart="-7dp"
+            android:paddingEnd="0dp">
+
+            <CheckBox
+                android:id="@+id/use_wallet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/use_wallet_amount"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/wallet_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<!--
+            <Button
+                android:id="@+id/schedule_ride"
+                style="@style/MyButton.Primary"
+                android:text="@string/schedule_ride" />-->
+
+            <Button
+                android:id="@+id/schedule_req"
+                style="@style/MyButton.Primary"
+                android:text="@string/schedule" />
+
+            <Button
+                android:id="@+id/ride_now"
+                style="@style/MyButton.Primary"
+                android:text="@string/request" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
