@@ -47,6 +47,7 @@ Add app in [firebase](http://console.firebase.google.com/), and don't forgot to 
     ".write": true
   }
 }
+```
 
 ## Screenshot
 
