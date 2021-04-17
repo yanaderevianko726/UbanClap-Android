@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.main.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/tv_title"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingTop="14dp"
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_menu"/>
+            <TextView
+
+                android:visibility="invisible"
+                android:id="@+id/ed_search_loc"
+                android:background="@null"
+                tools:text="Hello"
+                android:textColor="@color/white"
+                android:clickable="false"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:drawableTint="@color/white"
+                android:gravity="center|left"
+                android:drawableLeft="@drawable/ic_marker"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="12dp"
+                android:tint="@color/colorPrimaryText"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_back_black" />
+
+            <ImageView
+                android:id="@+id/gps"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/gps" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/pick_location_layout" />
+
+        <LinearLayout
+            android:id="@+id/llChangeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFF"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/changeDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center_vertical"
+                    android:text="@string/where_to"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_14" />
+
+                <ImageView
+                    android:id="@+id/change_location"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|end"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_change1"
+                    android:contentDescription="@string/qr_scan" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:orientation="vertical"
+
+        />
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cat_layout"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_ser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+             android:fontFamily="@font/copse"
+            android:text="  Services"
+            android:paddingLeft="@dimen/_10sdp"
+            android:drawableTint="@color/white"
+            android:drawableLeft="@drawable/ic_back_black"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:background="@color/quantum_black_text"
+             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <android.support.v7.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@+id/tv_ser"
+            android:id="@+id/recycler_cat"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

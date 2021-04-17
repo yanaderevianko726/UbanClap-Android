@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "650720214519",
+    "firebase_url": "https://urbanclap-13ae8.firebaseio.com",
+    "project_id": "urbanclap-13ae8",
+    "storage_bucket": "urbanclap-13ae8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650720214519:android:330f2ab1d9becca7",
+        "android_client_info": {
+          "package_name": "com.thinkin_service.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650720214519-c0b1n6tdg8q2polnr24o3phe6ba63bp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2HIYupwgAqKYj8BnNbojGdeumqfx_TzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650720214519-c0b1n6tdg8q2polnr24o3phe6ba63bp3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "650720214519-r030qqr5ic2ime8bm68urma9gc9vpssp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thinkinservice.provider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650720214519:android:6d01ad93882cf38e",
+        "android_client_info": {
+          "package_name": "com.thinkin_service.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650720214519-c0b1n6tdg8q2polnr24o3phe6ba63bp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2HIYupwgAqKYj8BnNbojGdeumqfx_TzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650720214519-c0b1n6tdg8q2polnr24o3phe6ba63bp3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "650720214519-r030qqr5ic2ime8bm68urma9gc9vpssp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thinkinservice.provider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650720214519:android:eb7fbd52fe871851a6c2f2",
+        "android_client_info": {
+          "package_name": "com.thinkinservice.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650720214519-c0b1n6tdg8q2polnr24o3phe6ba63bp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2HIYupwgAqKYj8BnNbojGdeumqfx_TzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650720214519-c0b1n6tdg8q2polnr24o3phe6ba63bp3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "650720214519-r030qqr5ic2ime8bm68urma9gc9vpssp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thinkinservice.provider"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

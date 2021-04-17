@@ -8,17 +8,5 @@ This app is On-demand service booking app, this is completed app in native sourc
 |:---------------------------------------:|
 | ![screenshot](screens/screen_1.png)   | 
 
-|                Screenshot               | 
-|:---------------------------------------:|
-| ![screenshot](screens/screen_2.png)   | 
-
-|                Screenshot               | 
-|:---------------------------------------:|
-| ![screenshot](screens/screen_3.png)   | 
-
-|                Screenshot               | 
-|:---------------------------------------:|
-| ![screenshot](screens/screen_3.png)   | 
-
 
 

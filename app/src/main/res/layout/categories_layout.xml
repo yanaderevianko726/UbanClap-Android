@@ -1,0 +1,119 @@
+<android.support.constraint.ConstraintLayout android:id="@+id/cat_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <include-->
+<!--        layout="@layout/app_bar_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:id="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"
+                android:drawableTint="@color/white"
+                android:elevation="10dp"
+                android:padding="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"
+                android:drawableTint="@color/white"
+                android:elevation="10dp"
+                android:padding="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_menu" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/ed_search"
+            android:hint="search"
+            android:textColor="@color/blue_grey"
+            android:padding="10dp"
+            android:gravity="center|left"
+            android:background="@drawable/button_border"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:background="@color/grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/pager_view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:visibility="gone"
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:padding="10dip"
+            app:centered="true"
+            app:fillColor="@color/colorPrimary"
+            app:pageColor="#3F51B5"
+            app:snap="false" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/pager_view"
+        android:id="@+id/recycler_main_cat"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
