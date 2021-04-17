@@ -4,16 +4,21 @@ This app is On-demand service booking app, this is completed app in native sourc
 
 ## Screenshot
 
-Screens
-![screenshot](screens/screen_1.png)
+|                Screenshot               |
+|:---------------------------------------:|
+| ![screenshot](screens/screen_1.png)   | 
 
-![screenshot](screens/screen_4.png)
+|                Screenshot               | 
+|:---------------------------------------:|
+| ![screenshot](screens/screen_2.png)   | 
 
-Admin pages
-![screenshot](screens/screen_2.png)
+|                Screenshot               | 
+|:---------------------------------------:|
+| ![screenshot](screens/screen_3.png)   | 
 
-
-![screenshot](screens/screen_3.png)
+|                Screenshot               | 
+|:---------------------------------------:|
+| ![screenshot](screens/screen_3.png)   | 
 
 
 
